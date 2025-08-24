@@ -1,24 +1,26 @@
-@import "tailwindcss/preflight";
-@tailwind utilities;
+@import "tailwindcss";
 
-/* Global input styling to ensure proper text color */
-input, select, textarea {
-  @apply text-gray-900 bg-white;
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
 }
 
-/* Ensure form inputs are visible */
-input[type="text"],
-input[type="number"],
-input[type="email"],
-input[type="password"],
-select,
-textarea {
-  color: #111827 !important; /* text-gray-900 */
-  background-color: #ffffff !important; /* bg-white */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
 }
 
-/* Placeholder text styling */
-input::placeholder,
-textarea::placeholder {
-  color: #9ca3af !important; /* text-gray-400 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
 }
