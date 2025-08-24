@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { Settings, Save, Eye, Download, Users, Calculator, AlertTriangle } from 'lucide-react';
+import { Settings, Save, Eye, Download, Calculator, AlertTriangle } from 'lucide-react';
 
 // Admin form schemas
 const formulaSchema = z.object({

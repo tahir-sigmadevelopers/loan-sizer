@@ -55,7 +55,17 @@ const validationRules = {
 };
 
 export default function LoanSizerPage() {
-  const [calculatedLoan, setCalculatedLoan] = useState<any>(null);
+  const [calculatedLoan, setCalculatedLoan] = useState<{
+    maxLoanAmount: number;
+    interestRate: number;
+    ltv: number;
+    downPayment: number;
+    closingCosts: number;
+    originationFee: number;
+    monthlyPayment: number;
+    totalProjectCost: number;
+    approvalStatus: string;
+  } | null>(null);
   const [validationErrors, setValidationErrors] = useState<string[]>([]);
   const [isCalculating, setIsCalculating] = useState(false);
 
@@ -64,7 +74,6 @@ export default function LoanSizerPage() {
     handleSubmit,
     watch,
     formState: { errors },
-    reset,
   } = useForm<LoanSizerForm>({
     resolver: zodResolver(loanSizerSchema),
   });
@@ -108,7 +117,7 @@ export default function LoanSizerPage() {
 
       setCalculatedLoan({
         maxLoanAmount: Math.round(maxLoanAmount),
-        interestRate: interestRate.toFixed(2),
+        interestRate: Math.round(interestRate * 100) / 100,
         ltv,
         downPayment: Math.round(downPayment),
         closingCosts: Math.round(closingCosts),
@@ -428,7 +437,7 @@ export default function LoanSizerPage() {
                 <Calculator className="mx-auto h-12 w-12 text-gray-400" />
                 <h3 className="mt-2 text-sm font-medium text-gray-900">No calculation yet</h3>
                 <p className="mt-1 text-sm text-gray-500">
-                  Fill out the form and click "Calculate Loan Terms" to see your results.
+                  Fill out the form and click &quot;Calculate Loan Terms&quot; to see your results.
                 </p>
               </div>
             )}

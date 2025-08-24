@@ -103,7 +103,7 @@ export class TermSheetService {
     try {
       // This would integrate with your email service (SendGrid, AWS SES, etc.)
       const doc = this.generatePDF(termSheetData);
-      const pdfBlob = doc.output('blob');
+      // const pdfBlob = doc.output('blob'); // Will be used when implementing actual email service
       
       // Mock email sending - replace with actual email service integration
       console.log('Sending email to:', email);
