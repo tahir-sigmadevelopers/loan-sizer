@@ -78,6 +78,7 @@ export default function LoanSizerPage() {
     resolver: zodResolver(loanSizerSchema),
   });
 
+  // 
   const watchedValues = watch();
 
   const validateInputs = (data: LoanSizerForm): string[] => {
