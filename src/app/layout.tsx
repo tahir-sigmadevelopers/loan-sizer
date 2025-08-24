@@ -6,6 +6,7 @@ import Navigation from "@/components/Navigation";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -20,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className={`${inter.variable} font-sans antialiased`} suppressHydrationWarning={true}>
         <Navigation />
         {children}
       </body>

@@ -3,14 +3,38 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Calculator, Settings } from 'lucide-react';
+import { useEffect, useState } from 'react';
 
 export default function Navigation() {
   const pathname = usePathname();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const navigation = [
     { name: 'Loan Sizer', href: '/', icon: Calculator },
     { name: 'Admin Dashboard', href: '/admin', icon: Settings },
   ];
+
+  // Prevent hydration mismatch by not rendering until mounted
+  if (!mounted) {
+    return (
+      <nav className="bg-white shadow-sm border-b border-gray-200">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-between h-16">
+            <div className="flex">
+              <div className="flex-shrink-0 flex items-center">
+                <Calculator className="h-8 w-8 text-blue-600" />
+                <span className="ml-2 text-xl font-bold text-gray-900">Loan Sizer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    );
+  }
 
   return (
     <nav className="bg-white shadow-sm border-b border-gray-200">

@@ -173,7 +173,7 @@ export default function AdminDashboard() {
                           type="number"
                           step="0.1"
                           {...formulaForm.register('baseInterestRate', { valueAsNumber: true })}
-                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
                         />
                       </div>
                       
@@ -185,7 +185,7 @@ export default function AdminDashboard() {
                           type="number"
                           step="0.1"
                           {...formulaForm.register('ficoDiscount750', { valueAsNumber: true })}
-                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
                         />
                       </div>
                       
@@ -197,7 +197,7 @@ export default function AdminDashboard() {
                           type="number"
                           step="0.1"
                           {...formulaForm.register('ficoDiscount700', { valueAsNumber: true })}
-                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
                         />
                       </div>
                       
@@ -209,7 +209,7 @@ export default function AdminDashboard() {
                           type="number"
                           step="0.1"
                           {...formulaForm.register('ficoDiscount650', { valueAsNumber: true })}
-                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
                         />
                       </div>
                       
@@ -221,7 +221,7 @@ export default function AdminDashboard() {
                           type="number"
                           step="0.1"
                           {...formulaForm.register('experienceDiscountProfessional', { valueAsNumber: true })}
-                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
                         />
                       </div>
                       
@@ -233,7 +233,7 @@ export default function AdminDashboard() {
                           type="number"
                           step="0.1"
                           {...formulaForm.register('experienceDiscountExperienced', { valueAsNumber: true })}
-                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
                         />
                       </div>
                       
@@ -245,7 +245,7 @@ export default function AdminDashboard() {
                           type="number"
                           step="0.1"
                           {...formulaForm.register('minInterestRate', { valueAsNumber: true })}
-                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
                         />
                       </div>
                     </div>
@@ -261,7 +261,7 @@ export default function AdminDashboard() {
                         <input
                           type="number"
                           {...formulaForm.register('ltvBeginner', { valueAsNumber: true })}
-                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
                         />
                       </div>
                       
@@ -272,7 +272,7 @@ export default function AdminDashboard() {
                         <input
                           type="number"
                           {...formulaForm.register('ltvIntermediate', { valueAsNumber: true })}
-                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
                         />
                       </div>
                       
@@ -283,7 +283,7 @@ export default function AdminDashboard() {
                         <input
                           type="number"
                           {...formulaForm.register('ltvExperienced', { valueAsNumber: true })}
-                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
                         />
                       </div>
                       
@@ -294,7 +294,7 @@ export default function AdminDashboard() {
                         <input
                           type="number"
                           {...formulaForm.register('ltvProfessional', { valueAsNumber: true })}
-                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
                         />
                       </div>
                       
@@ -306,7 +306,7 @@ export default function AdminDashboard() {
                           type="number"
                           step="0.1"
                           {...formulaForm.register('closingCostsPercentage', { valueAsNumber: true })}
-                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
                         />
                       </div>
                       
@@ -318,7 +318,7 @@ export default function AdminDashboard() {
                           type="number"
                           step="0.1"
                           {...formulaForm.register('originationFeePercentage', { valueAsNumber: true })}
-                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
                         />
                       </div>
                     </div>
@@ -352,7 +352,7 @@ export default function AdminDashboard() {
                     <input
                       type="number"
                       {...validationForm.register('minFico', { valueAsNumber: true })}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
                     />
                     <p className="text-sm text-gray-500 mt-1">Minimum FICO score required for approval</p>
                   </div>
@@ -364,7 +364,7 @@ export default function AdminDashboard() {
                     <input
                       type="number"
                       {...validationForm.register('maxRehabBudgetPercentage', { valueAsNumber: true })}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
                     />
                     <p className="text-sm text-gray-500 mt-1">Maximum rehab budget as percentage of purchase price</p>
                   </div>
@@ -377,7 +377,7 @@ export default function AdminDashboard() {
                       type="number"
                       step="0.1"
                       {...validationForm.register('minArvToPurchaseRatio', { valueAsNumber: true })}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
                     />
                     <p className="text-sm text-gray-500 mt-1">Minimum ARV to purchase price ratio for optimal financing</p>
                   </div>
